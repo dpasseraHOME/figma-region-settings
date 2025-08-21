@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="settings-panel">
+        <!-- Title -->
+        <div class="title-section">
+            <h1 class="settings-title">Settings</h1>
+        </div>
+
+        <!-- Content -->
+        <div class="content-section">
+            <!-- Top Controls -->
+            <div class="top-controls">
+                <div class="control-group">
+                    <div class="control-header">
+                        <div class="control-label">
+                            <span class="label-text">Enabled Regions:</span>
+                            <div class="badge">1/10</div>
+                        </div>
+                        <div class="control-buttons">
+                            <button class="btn-cta" id="enable-all-enabled">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enable all</span>
+                            </button>
+                            <button class="btn-cta" id="clear-all-enabled">
+                                <i class="fas fa-times-circle"></i>
+                                <span>Clear all</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="description-text">Text</p>
+                </div>
+
+                <div class="control-group">
+                    <div class="control-header">
+                        <div class="control-label">
+                            <span class="label-text">Base Regions:</span>
+                            <div class="badge">1/10</div>
+                        </div>
+                        <div class="control-buttons">
+                            <button class="btn-cta" id="enable-all-base">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Enable all</span>
+                            </button>
+                            <button class="btn-cta" id="clear-all-base">
+                                <i class="fas fa-times-circle"></i>
+                                <span>Clear all</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="description-text">Text</p>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="search-container">
+                <div class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search" id="searchInput">
+                </div>
+            </div>
+
+            <!-- Regions List -->
+            <div class="regions-list">
+                <!-- Europe Section -->
+                <div class="region-section expanded" data-region="europe">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <div class="region-toggle">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="region-label">
+                                <div class="region-checkbox checked">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span class="region-name">Europe</span>
+                            </div>
+                        </div>
+                        <div class="region-stats">
+                            <div class="stat-group">
+                                <span class="stat-label">Enabled Regions:</span>
+                                <div class="badge">1/10</div>
+                            </div>
+                            <div class="stat-group">
+                                <span class="stat-label">Base Regions:</span>
+                                <div class="badge">1/10</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="region-details">
+                        <div class="region-column">
+                            <div class="region-item enabled selected">
+                                <div class="item-info">
+                                    <div class="item-checkbox checked">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇳🇱</div>
+                                    <span class="item-name">Amsterdam</span>
+                                </div>
+                                <div class="base-tag active" data-base="amsterdam">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item enabled">
+                                <div class="item-info">
+                                    <div class="item-checkbox checked">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇩🇪</div>
+                                    <span class="item-name">Berlin</span>
+                                </div>
+                                <div class="base-tag" data-base="berlin">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item enabled">
+                                <div class="item-info">
+                                    <div class="item-checkbox checked">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇫🇷</div>
+                                    <span class="item-name">Paris</span>
+                                </div>
+                                <div class="base-tag" data-base="paris">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item enabled">
+                                <div class="item-info">
+                                    <div class="item-checkbox checked">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇮🇹</div>
+                                    <span class="item-name">Rome</span>
+                                </div>
+                                <div class="base-tag" data-base="rome">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇬🇧</div>
+                                    <span class="item-name">London</span>
+                                </div>
+                                <div class="base-tag" data-base="london">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item enabled">
+                                <div class="item-info">
+                                    <div class="item-checkbox checked">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇪🇸</div>
+                                    <span class="item-name">Madrid</span>
+                                </div>
+                                <div class="base-tag" data-base="madrid">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item enabled">
+                                <div class="item-info">
+                                    <div class="item-checkbox checked">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇦🇹</div>
+                                    <span class="item-name">Vienna</span>
+                                </div>
+                                <div class="base-tag" data-base="vienna">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇩🇰</div>
+                                    <span class="item-name">Copenhagen</span>
+                                </div>
+                                <div class="base-tag" data-base="copenhagen">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- North America Section -->
+                <div class="region-section collapsed" data-region="north-america">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <div class="region-toggle">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="region-label">
+                                <div class="region-checkbox">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <span class="region-name">North America</span>
+                            </div>
+                        </div>
+                        <div class="region-stats">
+                            <div class="stat-group">
+                                <span class="stat-label">Enabled Regions:</span>
+                                <div class="badge">0/6</div>
+                            </div>
+                            <div class="stat-group">
+                                <span class="stat-label">Base Regions:</span>
+                                <div class="badge">0/6</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="region-details">
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇺🇸</div>
+                                    <span class="item-name">New York</span>
+                                </div>
+                                <div class="base-tag" data-base="new-york">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇺🇸</div>
+                                    <span class="item-name">Los Angeles</span>
+                                </div>
+                                <div class="base-tag" data-base="los-angeles">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇺🇸</div>
+                                    <span class="item-name">Chicago</span>
+                                </div>
+                                <div class="base-tag" data-base="chicago">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇨🇦</div>
+                                    <span class="item-name">Toronto</span>
+                                </div>
+                                <div class="base-tag" data-base="toronto">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇨🇦</div>
+                                    <span class="item-name">Vancouver</span>
+                                </div>
+                                <div class="base-tag" data-base="vancouver">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇲🇽</div>
+                                    <span class="item-name">Mexico City</span>
+                                </div>
+                                <div class="base-tag" data-base="mexico-city">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asia Section -->
+                <div class="region-section collapsed" data-region="asia">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <div class="region-toggle">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="region-label">
+                                <div class="region-checkbox">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <span class="region-name">Asia</span>
+                            </div>
+                        </div>
+                        <div class="region-stats">
+                            <div class="stat-group">
+                                <span class="stat-label">Enabled Regions:</span>
+                                <div class="badge">0/7</div>
+                            </div>
+                            <div class="stat-group">
+                                <span class="stat-label">Base Regions:</span>
+                                <div class="badge">0/7</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="region-details">
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇯🇵</div>
+                                    <span class="item-name">Tokyo</span>
+                                </div>
+                                <div class="base-tag" data-base="tokyo">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇸🇬</div>
+                                    <span class="item-name">Singapore</span>
+                                </div>
+                                <div class="base-tag" data-base="singapore">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇰🇷</div>
+                                    <span class="item-name">Seoul</span>
+                                </div>
+                                <div class="base-tag" data-base="seoul">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇮🇳</div>
+                                    <span class="item-name">Mumbai</span>
+                                </div>
+                                <div class="base-tag" data-base="mumbai">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇭🇰</div>
+                                    <span class="item-name">Hong Kong</span>
+                                </div>
+                                <div class="base-tag" data-base="hong-kong">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇹🇭</div>
+                                    <span class="item-name">Bangkok</span>
+                                </div>
+                                <div class="base-tag" data-base="bangkok">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇨🇳</div>
+                                    <span class="item-name">Shanghai</span>
+                                </div>
+                                <div class="base-tag" data-base="shanghai">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Africa Section -->
+                <div class="region-section collapsed" data-region="africa">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <div class="region-toggle">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="region-label">
+                                <div class="region-checkbox">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <span class="region-name">Africa</span>
+                            </div>
+                        </div>
+                        <div class="region-stats">
+                            <div class="stat-group">
+                                <span class="stat-label">Enabled Regions:</span>
+                                <div class="badge">0/5</div>
+                            </div>
+                            <div class="stat-group">
+                                <span class="stat-label">Base Regions:</span>
+                                <div class="badge">0/5</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="region-details">
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇿🇦</div>
+                                    <span class="item-name">Cape Town</span>
+                                </div>
+                                <div class="base-tag" data-base="cape-town">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇪🇬</div>
+                                    <span class="item-name">Cairo</span>
+                                </div>
+                                <div class="base-tag" data-base="cairo">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇳🇬</div>
+                                    <span class="item-name">Lagos</span>
+                                </div>
+                                <div class="base-tag" data-base="lagos">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇰🇪</div>
+                                    <span class="item-name">Nairobi</span>
+                                </div>
+                                <div class="base-tag" data-base="nairobi">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇲🇦</div>
+                                    <span class="item-name">Casablanca</span>
+                                </div>
+                                <div class="base-tag" data-base="casablanca">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oceania Section -->
+                <div class="region-section collapsed" data-region="oceania">
+                    <div class="region-header">
+                        <div class="region-info">
+                            <div class="region-toggle">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="region-label">
+                                <div class="region-checkbox">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <span class="region-name">Oceania</span>
+                            </div>
+                        </div>
+                        <div class="region-stats">
+                            <div class="stat-group">
+                                <span class="stat-label">Enabled Regions:</span>
+                                <div class="badge">0/4</div>
+                            </div>
+                            <div class="stat-group">
+                                <span class="stat-label">Base Regions:</span>
+                                <div class="badge">0/4</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="region-details">
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇦🇺</div>
+                                    <span class="item-name">Sydney</span>
+                                </div>
+                                <div class="base-tag" data-base="sydney">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇦🇺</div>
+                                    <span class="item-name">Melbourne</span>
+                                </div>
+                                <div class="base-tag" data-base="melbourne">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="region-column">
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇳🇿</div>
+                                    <span class="item-name">Auckland</span>
+                                </div>
+                                <div class="base-tag" data-base="auckland">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="region-item">
+                                <div class="item-info">
+                                    <div class="item-checkbox">
+                                        <i class="fas fa-plus-circle"></i>
+                                    </div>
+                                    <div class="item-flag">🇦🇺</div>
+                                    <span class="item-name">Brisbane</span>
+                                </div>
+                                <div class="base-tag" data-base="brisbane">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>BASE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
