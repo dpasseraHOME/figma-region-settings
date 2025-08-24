@@ -1,0 +1,3228 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "City",
+            "id": "interface-City-e971d130bd2a2aa9ec910370bbc3ab24f37473a47bc690da3d03e494469f263535aea5fa632a46bbc7e9bf2fec6950eb3b4038effa20b69553c0933d9edc9d52",
+            "file": "src/app/models/region.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface City {\n  id: string;\n  name: string;\n  flag: string;\n  countryCode: string;\n  isEnabled: boolean;\n  isBaseRegion: boolean;\n}\n\nexport interface Region {\n  id: string;\n  name: string;\n  isExpanded: boolean;\n  isSelected: boolean;\n  cities: City[];\n}\n\nexport interface RegionStats {\n  enabledCount: number;\n  baseCount: number;\n  totalCount: number;\n}\n\nexport interface RegionState {\n  regions: Region[];\n  searchTerm: string;\n  globalStats: {\n    enabled: RegionStats;\n    base: RegionStats;\n  };\n}\n",
+            "properties": [
+                {
+                    "name": "countryCode",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "flag",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "isBaseRegion",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "isEnabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Region",
+            "id": "interface-Region-e971d130bd2a2aa9ec910370bbc3ab24f37473a47bc690da3d03e494469f263535aea5fa632a46bbc7e9bf2fec6950eb3b4038effa20b69553c0933d9edc9d52",
+            "file": "src/app/models/region.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface City {\n  id: string;\n  name: string;\n  flag: string;\n  countryCode: string;\n  isEnabled: boolean;\n  isBaseRegion: boolean;\n}\n\nexport interface Region {\n  id: string;\n  name: string;\n  isExpanded: boolean;\n  isSelected: boolean;\n  cities: City[];\n}\n\nexport interface RegionStats {\n  enabledCount: number;\n  baseCount: number;\n  totalCount: number;\n}\n\nexport interface RegionState {\n  regions: Region[];\n  searchTerm: string;\n  globalStats: {\n    enabled: RegionStats;\n    base: RegionStats;\n  };\n}\n",
+            "properties": [
+                {
+                    "name": "cities",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "City[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "isExpanded",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "isSelected",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "RegionState",
+            "id": "interface-RegionState-e971d130bd2a2aa9ec910370bbc3ab24f37473a47bc690da3d03e494469f263535aea5fa632a46bbc7e9bf2fec6950eb3b4038effa20b69553c0933d9edc9d52",
+            "file": "src/app/models/region.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface City {\n  id: string;\n  name: string;\n  flag: string;\n  countryCode: string;\n  isEnabled: boolean;\n  isBaseRegion: boolean;\n}\n\nexport interface Region {\n  id: string;\n  name: string;\n  isExpanded: boolean;\n  isSelected: boolean;\n  cities: City[];\n}\n\nexport interface RegionStats {\n  enabledCount: number;\n  baseCount: number;\n  totalCount: number;\n}\n\nexport interface RegionState {\n  regions: Region[];\n  searchTerm: string;\n  globalStats: {\n    enabled: RegionStats;\n    base: RegionStats;\n  };\n}\n",
+            "properties": [
+                {
+                    "name": "globalStats",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "regions",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Region[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "searchTerm",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "RegionStats",
+            "id": "interface-RegionStats-e971d130bd2a2aa9ec910370bbc3ab24f37473a47bc690da3d03e494469f263535aea5fa632a46bbc7e9bf2fec6950eb3b4038effa20b69553c0933d9edc9d52",
+            "file": "src/app/models/region.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface City {\n  id: string;\n  name: string;\n  flag: string;\n  countryCode: string;\n  isEnabled: boolean;\n  isBaseRegion: boolean;\n}\n\nexport interface Region {\n  id: string;\n  name: string;\n  isExpanded: boolean;\n  isSelected: boolean;\n  cities: City[];\n}\n\nexport interface RegionStats {\n  enabledCount: number;\n  baseCount: number;\n  totalCount: number;\n}\n\nexport interface RegionState {\n  regions: Region[];\n  searchTerm: string;\n  globalStats: {\n    enabled: RegionStats;\n    base: RegionStats;\n  };\n}\n",
+            "properties": [
+                {
+                    "name": "baseCount",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "enabledCount",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "totalCount",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-d4821beac0e4a852e513391b7470981c4353fdd95a18628bb68136c8695b489ee15b926e2e5031bc26cf30e1508e0a362c3ee13a06734702b4d15af140e485d5",
+            "file": "src/stories/user.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {\n  name: string;\n}\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "RegionDataService",
+            "id": "injectable-RegionDataService-a7c30c667eadd615e84ec087a8a124ddde89691c6a4f15721e9b942c7fccda512c20bee0deecf191e0e2dd0c3ef74c4a0bc49b2fa28c49eb16aa94b819948a06",
+            "file": "src/app/services/region-data.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getAllCities",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "City[]",
+                    "typeParameters": [],
+                    "line": 112,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet all cities across all regions\n",
+                    "description": "<p>Get all cities across all regions</p>\n"
+                },
+                {
+                    "name": "getAllRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Region[]",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet all regions with realistic city data\n",
+                    "description": "<p>Get all regions with realistic city data</p>\n"
+                },
+                {
+                    "name": "getCitiesByRegion",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "City[]",
+                    "typeParameters": [],
+                    "line": 119,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet cities by region ID\n",
+                    "description": "<p>Get cities by region ID</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getCityById",
+                    "args": [
+                        {
+                            "name": "cityId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "literal type | undefined",
+                    "typeParameters": [],
+                    "line": 99,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet a specific city by ID across all regions\n",
+                    "description": "<p>Get a specific city by ID across all regions</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "cityId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getRegionById",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Region | undefined",
+                    "typeParameters": [],
+                    "line": 92,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet a specific region by ID\n",
+                    "description": "<p>Get a specific region by ID</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { Region, City } from '../models';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class RegionDataService {\n\n  constructor() { }\n\n  /**\n   * Get all regions with realistic city data\n   */\n  getAllRegions(): Region[] {\n    return [\n      {\n        id: 'europe',\n        name: 'Europe',\n        isExpanded: true,\n        isSelected: true,\n        cities: [\n          { id: 'amsterdam', name: 'Amsterdam', flag: '🇳🇱', countryCode: 'NL', isEnabled: true, isBaseRegion: true },\n          { id: 'berlin', name: 'Berlin', flag: '🇩🇪', countryCode: 'DE', isEnabled: true, isBaseRegion: false },\n          { id: 'paris', name: 'Paris', flag: '🇫🇷', countryCode: 'FR', isEnabled: true, isBaseRegion: false },\n          { id: 'rome', name: 'Rome', flag: '🇮🇹', countryCode: 'IT', isEnabled: true, isBaseRegion: false },\n          { id: 'london', name: 'London', flag: '🇬🇧', countryCode: 'GB', isEnabled: false, isBaseRegion: false },\n          { id: 'madrid', name: 'Madrid', flag: '🇪🇸', countryCode: 'ES', isEnabled: true, isBaseRegion: false },\n          { id: 'vienna', name: 'Vienna', flag: '🇦🇹', countryCode: 'AT', isEnabled: true, isBaseRegion: false },\n          { id: 'copenhagen', name: 'Copenhagen', flag: '🇩🇰', countryCode: 'DK', isEnabled: false, isBaseRegion: false }\n        ]\n      },\n      {\n        id: 'north-america',\n        name: 'North America',\n        isExpanded: false,\n        isSelected: false,\n        cities: [\n          { id: 'new-york', name: 'New York', flag: '🇺🇸', countryCode: 'US', isEnabled: false, isBaseRegion: false },\n          { id: 'los-angeles', name: 'Los Angeles', flag: '🇺🇸', countryCode: 'US', isEnabled: false, isBaseRegion: false },\n          { id: 'chicago', name: 'Chicago', flag: '🇺🇸', countryCode: 'US', isEnabled: false, isBaseRegion: false },\n          { id: 'toronto', name: 'Toronto', flag: '🇨🇦', countryCode: 'CA', isEnabled: false, isBaseRegion: false },\n          { id: 'vancouver', name: 'Vancouver', flag: '🇨🇦', countryCode: 'CA', isEnabled: false, isBaseRegion: false },\n          { id: 'mexico-city', name: 'Mexico City', flag: '🇲🇽', countryCode: 'MX', isEnabled: false, isBaseRegion: false }\n        ]\n      },\n      {\n        id: 'asia',\n        name: 'Asia',\n        isExpanded: false,\n        isSelected: false,\n        cities: [\n          { id: 'tokyo', name: 'Tokyo', flag: '🇯🇵', countryCode: 'JP', isEnabled: false, isBaseRegion: false },\n          { id: 'singapore', name: 'Singapore', flag: '🇸🇬', countryCode: 'SG', isEnabled: false, isBaseRegion: false },\n          { id: 'seoul', name: 'Seoul', flag: '🇰🇷', countryCode: 'KR', isEnabled: false, isBaseRegion: false },\n          { id: 'mumbai', name: 'Mumbai', flag: '🇮🇳', countryCode: 'IN', isEnabled: false, isBaseRegion: false },\n          { id: 'hong-kong', name: 'Hong Kong', flag: '🇭🇰', countryCode: 'HK', isEnabled: false, isBaseRegion: false },\n          { id: 'bangkok', name: 'Bangkok', flag: '🇹🇭', countryCode: 'TH', isEnabled: false, isBaseRegion: false },\n          { id: 'shanghai', name: 'Shanghai', flag: '🇨🇳', countryCode: 'CN', isEnabled: false, isBaseRegion: false }\n        ]\n      },\n      {\n        id: 'africa',\n        name: 'Africa',\n        isExpanded: false,\n        isSelected: false,\n        cities: [\n          { id: 'cape-town', name: 'Cape Town', flag: '🇿🇦', countryCode: 'ZA', isEnabled: false, isBaseRegion: false },\n          { id: 'cairo', name: 'Cairo', flag: '🇪🇬', countryCode: 'EG', isEnabled: false, isBaseRegion: false },\n          { id: 'lagos', name: 'Lagos', flag: '🇳🇬', countryCode: 'NG', isEnabled: false, isBaseRegion: false },\n          { id: 'nairobi', name: 'Nairobi', flag: '🇰🇪', countryCode: 'KE', isEnabled: false, isBaseRegion: false },\n          { id: 'casablanca', name: 'Casablanca', flag: '🇲🇦', countryCode: 'MA', isEnabled: false, isBaseRegion: false }\n        ]\n      },\n      {\n        id: 'oceania',\n        name: 'Oceania',\n        isExpanded: false,\n        isSelected: false,\n        cities: [\n          { id: 'sydney', name: 'Sydney', flag: '🇦🇺', countryCode: 'AU', isEnabled: false, isBaseRegion: false },\n          { id: 'melbourne', name: 'Melbourne', flag: '🇦🇺', countryCode: 'AU', isEnabled: false, isBaseRegion: false },\n          { id: 'auckland', name: 'Auckland', flag: '🇳🇿', countryCode: 'NZ', isEnabled: false, isBaseRegion: false },\n          { id: 'brisbane', name: 'Brisbane', flag: '🇦🇺', countryCode: 'AU', isEnabled: false, isBaseRegion: false }\n        ]\n      }\n    ];\n  }\n\n  /**\n   * Get a specific region by ID\n   */\n  getRegionById(regionId: string): Region | undefined {\n    return this.getAllRegions().find(region => region.id === regionId);\n  }\n\n  /**\n   * Get a specific city by ID across all regions\n   */\n  getCityById(cityId: string): { region: Region; city: City } | undefined {\n    for (const region of this.getAllRegions()) {\n      const city = region.cities.find(c => c.id === cityId);\n      if (city) {\n        return { region, city };\n      }\n    }\n    return undefined;\n  }\n\n  /**\n   * Get all cities across all regions\n   */\n  getAllCities(): City[] {\n    return this.getAllRegions().flatMap(region => region.cities);\n  }\n\n  /**\n   * Get cities by region ID\n   */\n  getCitiesByRegion(regionId: string): City[] {\n    const region = this.getRegionById(regionId);\n    return region ? region.cities : [];\n  }\n}",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "RegionStateService",
+            "id": "injectable-RegionStateService-94af0643099009cedc2611c70a2ad6392727e705f179c83cb343553553901503fcda4e9884360e5343feac2c0c265fca327f706674c877c8613eb90eee14c0b3",
+            "file": "src/app/services/region-state.service.ts",
+            "properties": [
+                {
+                    "name": "regions$",
+                    "defaultValue": "this.regionsSubject.asObservable()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "regionsSubject",
+                    "defaultValue": "new BehaviorSubject<Region[]>([])",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 10,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "searchTerm$",
+                    "defaultValue": "this.searchTermSubject.asObservable()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "searchTermSubject",
+                    "defaultValue": "new BehaviorSubject<string>('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "clearAllBaseRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 182,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nClear all base regions\n",
+                    "description": "<p>Clear all base regions</p>\n"
+                },
+                {
+                    "name": "clearAllRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 154,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nClear all regions\n",
+                    "description": "<p>Clear all regions</p>\n"
+                },
+                {
+                    "name": "enableAllBaseRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 167,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nEnable all base regions (one per region)\n",
+                    "description": "<p>Enable all base regions (one per region)</p>\n"
+                },
+                {
+                    "name": "enableAllRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 141,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nEnable all regions\n",
+                    "description": "<p>Enable all regions</p>\n"
+                },
+                {
+                    "name": "getCurrentRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Region[]",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet current regions value\n",
+                    "description": "<p>Get current regions value</p>\n"
+                },
+                {
+                    "name": "getCurrentSearchTerm",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 39,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet current search term\n",
+                    "description": "<p>Get current search term</p>\n"
+                },
+                {
+                    "name": "getGlobalStats",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<literal type>",
+                    "typeParameters": [],
+                    "line": 194,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet global statistics\n",
+                    "description": "<p>Get global statistics</p>\n"
+                },
+                {
+                    "name": "getRegionStats",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<literal type>",
+                    "typeParameters": [],
+                    "line": 220,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet statistics for a specific region\n",
+                    "description": "<p>Get statistics for a specific region</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "initializeRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nInitialize regions with default data\n",
+                    "description": "<p>Initialize regions with default data</p>\n",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "setSearchTerm",
+                    "args": [
+                        {
+                            "name": "term",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nUpdate search term\n",
+                    "description": "<p>Update search term</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "term",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggleBaseRegion",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "cityId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 116,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nToggle base region status (exclusive per region)\n",
+                    "description": "<p>Toggle base region status (exclusive per region)</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "cityId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggleCitySelection",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "cityId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 88,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nToggle individual city selection\n",
+                    "description": "<p>Toggle individual city selection</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "cityId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggleRegionExpansion",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 53,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nToggle region expansion\n",
+                    "description": "<p>Toggle region expansion</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggleRegionSelection",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nToggle region selection (affects all cities in region)\n",
+                    "description": "<p>Toggle region selection (affects all cities in region)</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { BehaviorSubject, Observable, combineLatest, map } from 'rxjs';\nimport { Region, City, RegionStats, RegionState } from '../models';\nimport { RegionDataService } from './region-data.service';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class RegionStateService {\n  private regionsSubject = new BehaviorSubject<Region[]>([]);\n  private searchTermSubject = new BehaviorSubject<string>('');\n\n  public regions$ = this.regionsSubject.asObservable();\n  public searchTerm$ = this.searchTermSubject.asObservable();\n\n  constructor(private regionDataService: RegionDataService) {\n    // Initialize with data from RegionDataService\n    this.initializeRegions();\n  }\n\n  /**\n   * Initialize regions with default data\n   */\n  private initializeRegions(): void {\n    const regions = this.regionDataService.getAllRegions();\n    this.regionsSubject.next(regions);\n  }\n\n  /**\n   * Get current regions value\n   */\n  getCurrentRegions(): Region[] {\n    return this.regionsSubject.value;\n  }\n\n  /**\n   * Get current search term\n   */\n  getCurrentSearchTerm(): string {\n    return this.searchTermSubject.value;\n  }\n\n  /**\n   * Update search term\n   */\n  setSearchTerm(term: string): void {\n    this.searchTermSubject.next(term);\n  }\n\n  /**\n   * Toggle region expansion\n   */\n  toggleRegionExpansion(regionId: string): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => \n      region.id === regionId \n        ? { ...region, isExpanded: !region.isExpanded }\n        : region\n    );\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Toggle region selection (affects all cities in region)\n   */\n  toggleRegionSelection(regionId: string): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => {\n      if (region.id === regionId) {\n        const newSelectedState = !region.isSelected;\n        return {\n          ...region,\n          isSelected: newSelectedState,\n          cities: region.cities.map(city => ({\n            ...city,\n            isEnabled: newSelectedState\n          }))\n        };\n      }\n      return region;\n    });\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Toggle individual city selection\n   */\n  toggleCitySelection(regionId: string, cityId: string): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => {\n      if (region.id === regionId) {\n        const updatedCities = region.cities.map(city =>\n          city.id === cityId\n            ? { ...city, isEnabled: !city.isEnabled }\n            : city\n        );\n        \n        // Update region selection based on city states\n        const allEnabled = updatedCities.every(city => city.isEnabled);\n        const noneEnabled = updatedCities.every(city => !city.isEnabled);\n        \n        return {\n          ...region,\n          cities: updatedCities,\n          isSelected: allEnabled\n        };\n      }\n      return region;\n    });\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Toggle base region status (exclusive per region)\n   */\n  toggleBaseRegion(regionId: string, cityId: string): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => {\n      if (region.id === regionId) {\n        const updatedCities = region.cities.map(city => {\n          if (city.id === cityId) {\n            // Toggle this city's base status\n            return { ...city, isBaseRegion: !city.isBaseRegion };\n          } else if (city.isBaseRegion) {\n            // Deactivate other base regions in this region (exclusive)\n            return { ...city, isBaseRegion: false };\n          }\n          return city;\n        });\n        \n        return { ...region, cities: updatedCities };\n      }\n      return region;\n    });\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Enable all regions\n   */\n  enableAllRegions(): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => ({\n      ...region,\n      isSelected: true,\n      cities: region.cities.map(city => ({ ...city, isEnabled: true }))\n    }));\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Clear all regions\n   */\n  clearAllRegions(): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => ({\n      ...region,\n      isSelected: false,\n      cities: region.cities.map(city => ({ ...city, isEnabled: false }))\n    }));\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Enable all base regions (one per region)\n   */\n  enableAllBaseRegions(): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => ({\n      ...region,\n      cities: region.cities.map((city, index) => ({\n        ...city,\n        isBaseRegion: index === 0 // Make first city in each region the base\n      }))\n    }));\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Clear all base regions\n   */\n  clearAllBaseRegions(): void {\n    const regions = this.getCurrentRegions();\n    const updatedRegions = regions.map(region => ({\n      ...region,\n      cities: region.cities.map(city => ({ ...city, isBaseRegion: false }))\n    }));\n    this.regionsSubject.next(updatedRegions);\n  }\n\n  /**\n   * Get global statistics\n   */\n  getGlobalStats(): Observable<{ enabled: RegionStats; base: RegionStats }> {\n    return this.regions$.pipe(\n      map(regions => {\n        const allCities = regions.flatMap(region => region.cities);\n        const enabledCities = allCities.filter(city => city.isEnabled);\n        const baseCities = allCities.filter(city => city.isBaseRegion);\n\n        return {\n          enabled: {\n            enabledCount: enabledCities.length,\n            baseCount: 0, // Not used for enabled stats\n            totalCount: allCities.length\n          },\n          base: {\n            enabledCount: 0, // Not used for base stats\n            baseCount: baseCities.length,\n            totalCount: allCities.length\n          }\n        };\n      })\n    );\n  }\n\n  /**\n   * Get statistics for a specific region\n   */\n  getRegionStats(regionId: string): Observable<{ enabled: RegionStats; base: RegionStats }> {\n    return this.regions$.pipe(\n      map(regions => {\n        const region = regions.find(r => r.id === regionId);\n        if (!region) {\n          return {\n            enabled: { enabledCount: 0, baseCount: 0, totalCount: 0 },\n            base: { enabledCount: 0, baseCount: 0, totalCount: 0 }\n          };\n        }\n\n        const enabledCities = region.cities.filter(city => city.isEnabled);\n        const baseCities = region.cities.filter(city => city.isBaseRegion);\n\n        return {\n          enabled: {\n            enabledCount: enabledCities.length,\n            baseCount: 0,\n            totalCount: region.cities.length\n          },\n          base: {\n            enabledCount: 0,\n            baseCount: baseCities.length,\n            totalCount: region.cities.length\n          }\n        };\n      })\n    );\n  }\n}",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "regionDataService",
+                        "type": "RegionDataService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 14,
+                "jsdoctags": [
+                    {
+                        "name": "regionDataService",
+                        "type": "RegionDataService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "SearchService",
+            "id": "injectable-SearchService-79bb0f00dab1ee1f797e11b5ba0b3b893d630592f2dac58b16ddb410a3801b0774e99eb5a813c1ba667b42632043207558fe8ecd5ec4ac1d3800666efc4a670d",
+            "file": "src/app/services/search.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "clearSearch",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 122,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nClear search term\n",
+                    "description": "<p>Clear search term</p>\n"
+                },
+                {
+                    "name": "filterRegions",
+                    "args": [
+                        {
+                            "name": "regions",
+                            "type": "Region[]",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "searchTerm",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Region[]",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nFilter regions and cities based on search term\n",
+                    "description": "<p>Filter regions and cities based on search term</p>\n",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "regions",
+                            "type": "Region[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "searchTerm",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "findCity",
+                    "args": [
+                        {
+                            "name": "cityName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<literal type | null>",
+                    "typeParameters": [],
+                    "line": 67,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nSearch for specific city across all regions\n",
+                    "description": "<p>Search for specific city across all regions</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "cityName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getFilteredRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<Region[]>",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet filtered regions based on search term\n",
+                    "description": "<p>Get filtered regions based on search term</p>\n"
+                },
+                {
+                    "name": "getSearchResultCount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<literal type>",
+                    "typeParameters": [],
+                    "line": 138,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet search result count\n",
+                    "description": "<p>Get search result count</p>\n"
+                },
+                {
+                    "name": "getSearchSuggestions",
+                    "args": [
+                        {
+                            "name": "searchTerm",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<string[]>",
+                    "typeParameters": [],
+                    "line": 89,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nGet search suggestions based on current input\n",
+                    "description": "<p>Get search suggestions based on current input</p>\n",
+                    "jsdoctags": [
+                        {
+                            "name": "searchTerm",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "hasSearchResults",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<boolean>",
+                    "typeParameters": [],
+                    "line": 129,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nCheck if any results match the search term\n",
+                    "description": "<p>Check if any results match the search term</p>\n"
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { Observable, combineLatest, map } from 'rxjs';\nimport { Region, City } from '../models';\nimport { RegionStateService } from './region-state.service';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class SearchService {\n\n  constructor(private regionStateService: RegionStateService) { }\n\n  /**\n   * Get filtered regions based on search term\n   */\n  getFilteredRegions(): Observable<Region[]> {\n    return combineLatest([\n      this.regionStateService.regions$,\n      this.regionStateService.searchTerm$\n    ]).pipe(\n      map(([regions, searchTerm]) => this.filterRegions(regions, searchTerm))\n    );\n  }\n\n  /**\n   * Filter regions and cities based on search term\n   */\n  private filterRegions(regions: Region[], searchTerm: string): Region[] {\n    if (!searchTerm.trim()) {\n      return regions;\n    }\n\n    const lowerSearchTerm = searchTerm.toLowerCase();\n\n    return regions.map(region => {\n      const regionMatches = region.name.toLowerCase().includes(lowerSearchTerm);\n      const filteredCities = region.cities.filter(city => \n        city.name.toLowerCase().includes(lowerSearchTerm) || \n        city.countryCode.toLowerCase().includes(lowerSearchTerm)\n      );\n\n      // Show region if:\n      // 1. Region name matches, OR\n      // 2. At least one city matches\n      if (regionMatches || filteredCities.length > 0) {\n        return {\n          ...region,\n          cities: regionMatches ? region.cities : filteredCities\n        };\n      }\n\n      // Return region with empty cities if no match (will be filtered out in component)\n      return {\n        ...region,\n        cities: []\n      };\n    }).filter(region => {\n      // Only return regions that have cities or match themselves\n      return region.cities.length > 0 || \n             region.name.toLowerCase().includes(lowerSearchTerm);\n    });\n  }\n\n  /**\n   * Search for specific city across all regions\n   */\n  findCity(cityName: string): Observable<{ region: Region; city: City } | null> {\n    return this.regionStateService.regions$.pipe(\n      map(regions => {\n        const lowerCityName = cityName.toLowerCase();\n        \n        for (const region of regions) {\n          const city = region.cities.find(c => \n            c.name.toLowerCase().includes(lowerCityName) ||\n            c.id.toLowerCase().includes(lowerCityName)\n          );\n          if (city) {\n            return { region, city };\n          }\n        }\n        return null;\n      })\n    );\n  }\n\n  /**\n   * Get search suggestions based on current input\n   */\n  getSearchSuggestions(searchTerm: string): Observable<string[]> {\n    return this.regionStateService.regions$.pipe(\n      map(regions => {\n        if (!searchTerm.trim()) {\n          return [];\n        }\n\n        const lowerSearchTerm = searchTerm.toLowerCase();\n        const suggestions: string[] = [];\n\n        // Add matching region names\n        regions.forEach(region => {\n          if (region.name.toLowerCase().includes(lowerSearchTerm)) {\n            suggestions.push(region.name);\n          }\n\n          // Add matching city names\n          region.cities.forEach(city => {\n            if (city.name.toLowerCase().includes(lowerSearchTerm)) {\n              suggestions.push(city.name);\n            }\n          });\n        });\n\n        // Remove duplicates and limit to 10 suggestions\n        return [...new Set(suggestions)].slice(0, 10);\n      })\n    );\n  }\n\n  /**\n   * Clear search term\n   */\n  clearSearch(): void {\n    this.regionStateService.setSearchTerm('');\n  }\n\n  /**\n   * Check if any results match the search term\n   */\n  hasSearchResults(): Observable<boolean> {\n    return this.getFilteredRegions().pipe(\n      map(regions => regions.length > 0)\n    );\n  }\n\n  /**\n   * Get search result count\n   */\n  getSearchResultCount(): Observable<{ regions: number; cities: number }> {\n    return this.getFilteredRegions().pipe(\n      map(regions => ({\n        regions: regions.length,\n        cities: regions.reduce((total, region) => total + region.cities.length, 0)\n      }))\n    );\n  }\n}",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 9,
+                "jsdoctags": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-0c83a51fa4fc0a7a13d9102da6b6e6bfbcc19214ab7aa2eeb35e9f1c3918d2027a819570e6947fd15927188654c07b2d7373bc5843d2950ac94bfc359cbe2eed",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'region-settings-angular'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterOutlet"
+                },
+                {
+                    "name": "NavbarComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\nimport { NavbarComponent } from './shared/navbar/navbar.component';\n\n@Component({\n  selector: 'app-root',\n  imports: [RouterOutlet, NavbarComponent],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.scss'\n})\nexport class AppComponent {\n  title = 'region-settings-angular';\n}\n",
+            "styleUrl": "./app.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<!-- Navigation -->\n<app-navbar></app-navbar>\n\n<!-- Main Content -->\n<main class=\"main-content\">\n  <router-outlet></router-outlet>\n</main>"
+        },
+        {
+            "name": "BadgeComponent",
+            "id": "component-BadgeComponent-eadfe2ac12ca56f2d752f692e496f823514a50244ac8ee9c9bb6cee71d81f75116cb7763cb8e1dfa75f1da9abee78a6dfb378c6243a63ddc795b8aa88804f233",
+            "file": "src/app/components/badge/badge.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-badge",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./badge.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "count",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "total",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-badge',\n  imports: [],\n  templateUrl: './badge.component.html',\n  styleUrl: './badge.component.scss'\n})\nexport class BadgeComponent {\n  @Input() count: number = 0;\n  @Input() total: number = 0;\n}",
+            "styleUrl": "./badge.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"badge\">\n  {{ count }}/{{ total }}\n</div>"
+        },
+        {
+            "name": "BaseTagComponent",
+            "id": "component-BaseTagComponent-b921c23b22b6bf106fc56e367193466c6847d07b7e24b08389df17750d1d3b1007bf14d41718e274586be58c8c183d1815c2c591d4a2f04a914c6d36fdb77561",
+            "file": "src/app/components/base-tag/base-tag.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-base-tag",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./base-tag.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "isActive",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "toggle",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "onToggle",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'app-base-tag',\n  imports: [],\n  templateUrl: './base-tag.component.html',\n  styleUrl: './base-tag.component.scss'\n})\nexport class BaseTagComponent {\n  @Input() isActive: boolean = false;\n  @Output() toggle = new EventEmitter<Event>();\n\n  onToggle(event: Event): void {\n    event.stopPropagation();\n    this.toggle.emit(event);\n  }\n}",
+            "styleUrl": "./base-tag.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"base-tag\" \n     [class.active]=\"isActive\"\n     (click)=\"onToggle($event)\">\n  <i class=\"fas fa-check-circle\"></i>\n  <span>BASE</span>\n</div>"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-d7bf0323e6da130e2609e2af0117b4a8d7cd874132206af50bf43dfc37044485fe50f2867ea76525730dd195b9b95a43802a12dadc6ad5cd7bf2faa07f19f0da",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": " <button  type=\"button\"\n  (click)=\"onClick.emit($event)\"\n  [ngClass]=\"classes\"\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\n>\n  {{ label }}\n</button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nWhat background color to use",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 25,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 760,
+                            "end": 773,
+                            "kind": 327,
+                            "id": 0,
+                            "flags": 16842752,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "tagName": {
+                                "pos": 761,
+                                "end": 769,
+                                "kind": 80,
+                                "id": 0,
+                                "flags": 16842752,
+                                "transformFlags": 0,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 37,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nIs this the principal call to action on the page?",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nHow large should the button be?",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 29,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nOptional click handler",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 41,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone: true,\n  imports: [CommonModule],\n  template: ` <button\n  type=\"button\"\n  (click)=\"onClick.emit($event)\"\n  [ngClass]=\"classes\"\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\n>\n  {{ label }}\n</button>`,\n  styleUrls: ['./button.css'],\n})\nexport class ButtonComponent {\n  /** Is this the principal call to action on the page? */\n  @Input()\n  primary = false;\n\n  /** What background color to use */\n  @Input()\n  backgroundColor?: string;\n\n  /** How large should the button be? */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /** Optional click handler */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  display: inline-block;\n  cursor: pointer;\n  border: 0;\n  border-radius: 3em;\n  font-weight: 700;\n  line-height: 1;\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n.storybook-button--primary {\n  background-color: #555ab9;\n  color: white;\n}\n.storybook-button--secondary {\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n  background-color: transparent;\n  color: #333;\n}\n.storybook-button--small {\n  padding: 10px 16px;\n  font-size: 12px;\n}\n.storybook-button--medium {\n  padding: 11px 20px;\n  font-size: 14px;\n}\n.storybook-button--large {\n  padding: 12px 24px;\n  font-size: 16px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 43
+                    }
+                }
+            }
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-48b9abe37706bc42f20cfa97ed9f943678344ea7d254c0c82183c657750c2191b43486fe730c778627b2ea6aa0e2f33a7abcf3ce08b68ad18b062ad99ea97acb",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>  <div class=\"storybook-header\">\n    <div>\n      <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n            fill=\"#FFF\"\n          />\n          <path\n            d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n            fill=\"#555AB9\"\n          />\n          <path d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\" fill=\"#91BAF8\" />\n        </g>\n      </svg>\n      <h1>Acme</h1>\n    </div>\n    <div>\n      <div *ngIf=\"user\">\n        <span class=\"welcome\">\n          Welcome, <b>{{ user.name }}</b\n          >!\n        </span>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n      </div>\n      <div *ngIf=\"!user\">\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          class=\"margin-left\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          [primary]=\"true\"\n          class=\"margin-left\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </div>\n</header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 66,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 75,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 69,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 72,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { ButtonComponent } from './button.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-header',\n  standalone: true,\n  imports: [CommonModule, ButtonComponent],\n  template: `<header>\n  <div class=\"storybook-header\">\n    <div>\n      <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n            fill=\"#FFF\"\n          />\n          <path\n            d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n            fill=\"#555AB9\"\n          />\n          <path d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\" fill=\"#91BAF8\" />\n        </g>\n      </svg>\n      <h1>Acme</h1>\n    </div>\n    <div>\n      <div *ngIf=\"user\">\n        <span class=\"welcome\">\n          Welcome, <b>{{ user.name }}</b\n          >!\n        </span>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n      </div>\n      <div *ngIf=\"!user\">\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          class=\"margin-left\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          [primary]=\"true\"\n          class=\"margin-left\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </div>\n</header>`,\n  styleUrls: ['./header.css'],\n})\nexport class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n\n.storybook-header svg {\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header h1 {\n  display: inline-block;\n  vertical-align: top;\n  margin: 6px 0 6px 10px;\n  font-weight: 700;\n  font-size: 20px;\n  line-height: 1;\n}\n\n.storybook-header button + button {\n  margin-left: 10px;\n}\n\n.storybook-header .welcome {\n  margin-right: 10px;\n  color: #333;\n  font-size: 14px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "HomeComponent",
+            "id": "component-HomeComponent-60149a16e17f583968cd57de1a7cdf35360849da223886a4d720be9f216c2601880cd08114869b42705e9c0192fe772028178a62cb09cbde3db3bfc176533906",
+            "file": "src/app/pages/home/home.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-home",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./home.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterLink"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink } from '@angular/router';\n\n@Component({\n  selector: 'app-home',\n  imports: [RouterLink],\n  templateUrl: './home.component.html',\n  styleUrl: './home.component.scss'\n})\nexport class HomeComponent {\n\n}\n",
+            "styleUrl": "./home.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"home-container\">\n  <div class=\"hero-section\">\n    <div class=\"hero-content\">\n      <h1 class=\"hero-title\">\n        <i class=\"fas fa-globe\"></i>\n        Region Settings App\n      </h1>\n      <p class=\"hero-subtitle\">\n        Interactive prototype built from Figma design specifications\n      </p>\n      <p class=\"hero-description\">\n        This Angular application demonstrates the conversion of a Figma design into a fully functional, \n        interactive prototype with realistic data, state management, and modern UI patterns.\n      </p>\n      \n      <div class=\"hero-actions\">\n        <a routerLink=\"/regions\" class=\"btn-primary\">\n          <i class=\"fas fa-map-marked-alt\"></i>\n          <span>View Prototype</span>\n        </a>\n        <a routerLink=\"/regions-prototype-b\" class=\"btn-primary\">\n          <i class=\"fas fa-chart-bar\"></i>\n          <span>View Dashboard</span>\n        </a>\n        <a href=\"https://github.com/dpasseraHOME/figma-region-settings\" target=\"_blank\" class=\"btn-secondary\">\n          <i class=\"fab fa-github\"></i>\n          <span>View Source</span>\n        </a>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"features-section\">\n    <div class=\"container\">\n      <h2 class=\"section-title\">Features</h2>\n      \n      <div class=\"features-grid\">\n        <div class=\"feature-card\">\n          <div class=\"feature-icon\">\n            <i class=\"fas fa-mouse-pointer\"></i>\n          </div>\n          <h3 class=\"feature-title\">Interactive Components</h3>\n          <p class=\"feature-description\">\n            Collapsible sections, exclusive base region selection, and real-time search filtering.\n          </p>\n        </div>\n\n        <div class=\"feature-card\">\n          <div class=\"feature-icon\">\n            <i class=\"fas fa-database\"></i>\n          </div>\n          <h3 class=\"feature-title\">Realistic Data</h3>\n          <p class=\"feature-description\">\n            30+ cities across 5 continents with authentic country flags and proper geographic organization.\n          </p>\n        </div>\n\n        <div class=\"feature-card\">\n          <div class=\"feature-icon\">\n            <i class=\"fas fa-code\"></i>\n          </div>\n          <h3 class=\"feature-title\">Modern Architecture</h3>\n          <p class=\"feature-description\">\n            Angular with TypeScript, RxJS state management, and component-based architecture.\n          </p>\n        </div>\n\n        <div class=\"feature-card\">\n          <div class=\"feature-icon\">\n            <i class=\"fas fa-mobile-alt\"></i>\n          </div>\n          <h3 class=\"feature-title\">Responsive Design</h3>\n          <p class=\"feature-description\">\n            Mobile-friendly layout with breakpoints and accessibility support throughout.\n          </p>\n        </div>\n\n        <div class=\"feature-card\">\n          <div class=\"feature-icon\">\n            <i class=\"fas fa-palette\"></i>\n          </div>\n          <h3 class=\"feature-title\">Design System</h3>\n          <p class=\"feature-description\">\n            SCSS variables, mixins, and consistent styling patterns following Figma specifications.\n          </p>\n        </div>\n\n        <div class=\"feature-card\">\n          <div class=\"feature-icon\">\n            <i class=\"fas fa-rocket\"></i>\n          </div>\n          <h3 class=\"feature-title\">Production Ready</h3>\n          <p class=\"feature-description\">\n            Clean builds, proper error handling, and optimized performance for deployment.\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"tech-stack-section\">\n    <div class=\"container\">\n      <h2 class=\"section-title\">Tech Stack</h2>\n      \n      <div class=\"tech-grid\">\n        <div class=\"tech-item\">\n          <i class=\"fab fa-angular\"></i>\n          <span>Angular 19</span>\n        </div>\n        <div class=\"tech-item\">\n          <i class=\"fab fa-js-square\"></i>\n          <span>TypeScript</span>\n        </div>\n        <div class=\"tech-item\">\n          <i class=\"fas fa-stream\"></i>\n          <span>RxJS</span>\n        </div>\n        <div class=\"tech-item\">\n          <i class=\"fab fa-sass\"></i>\n          <span>SCSS</span>\n        </div>\n        <div class=\"tech-item\">\n          <i class=\"fas fa-font\"></i>\n          <span>Font Awesome</span>\n        </div>\n        <div class=\"tech-item\">\n          <i class=\"fab fa-google\"></i>\n          <span>Google Fonts</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "NavbarComponent",
+            "id": "component-NavbarComponent-06708cace190f258129b356e679e0c39cd0d107b2a10240fdc3c1eb37dcf90330f74ab985dd4be1a5bd2ae7b65f39088bfdbfe689583312ade709e6dec69f2f1",
+            "file": "src/app/shared/navbar/navbar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-navbar",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./navbar.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterLink"
+                },
+                {
+                    "name": "RouterLinkActive"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterLink, RouterLinkActive } from '@angular/router';\n\n@Component({\n  selector: 'app-navbar',\n  imports: [RouterLink, RouterLinkActive],\n  templateUrl: './navbar.component.html',\n  styleUrl: './navbar.component.scss'\n})\nexport class NavbarComponent {\n\n}\n",
+            "styleUrl": "./navbar.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<nav class=\"navbar\">\n  <div class=\"navbar-container\">\n    <div class=\"navbar-brand\">\n      <a routerLink=\"/\" class=\"brand-link\">\n        <i class=\"fas fa-globe\"></i>\n        <span>Region Settings</span>\n      </a>\n    </div>\n    \n    <div class=\"navbar-menu\">\n      <a \n        routerLink=\"/\" \n        routerLinkActive=\"active\" \n        [routerLinkActiveOptions]=\"{exact: true}\"\n        class=\"nav-link\"\n      >\n        <i class=\"fas fa-home\"></i>\n        <span>Home</span>\n      </a>\n      \n      <a \n        routerLink=\"/regions\" \n        routerLinkActive=\"active\"\n        class=\"nav-link\"\n      >\n        <i class=\"fas fa-map-marked-alt\"></i>\n        <span>Regions Prototype</span>\n      </a>\n      \n      <a \n        routerLink=\"/regions-prototype-b\" \n        routerLinkActive=\"active\"\n        class=\"nav-link\"\n      >\n        <i class=\"fas fa-chart-bar\"></i>\n        <span>Regions Prototype B</span>\n      </a>\n    </div>\n  </div>\n</nav>"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-21dd6eb370b4983b5c21c84d40e6f54d266a9d9af9889e6e76b35c43058bd53b3e451bad089d5adf4bea46647ba10265a2fa8cb15630398e75636307d4817fc6",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>  <storybook-header\n    [user]=\"user\"\n    (onLogout)=\"doLogout()\"\n    (onLogin)=\"doLogin()\"\n    (onCreateAccount)=\"doCreateAccount()\"\n  ></storybook-header>\n  <section class=\"storybook-page\">\n    <h2>Pages in Storybook</h2>\n    <p>\n      We recommend building UIs with a\n      <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <strong>component-driven</strong>\n      </a>\n      process starting with atomic components and ending with pages.\n    </p>\n    <p>\n      Render pages with mock data. This makes it easy to build and review page states without\n      needing to navigate to them in your app. Here are some handy patterns for managing page data\n      in Storybook:\n    </p>\n    <ul>\n      <li>\n        Use a higher-level connected component. Storybook helps you compose such data from the\n        \"args\" of child component stories\n      </li>\n      <li>\n        Assemble data in the page component from your services. You can mock these services out\n        using Storybook.\n      </li>\n    </ul>\n    <p>\n      Get a guided tutorial on component-driven development at\n      <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n        Storybook tutorials\n      </a>\n      . Read more in the\n      <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n      .\n    </p>\n    <div class=\"tip-wrapper\">\n      <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n      <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n            id=\"a\"\n            fill=\"#999\"\n          />\n        </g>\n      </svg>\n      Viewports addon in the toolbar\n    </div>\n  </section>\n</article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 69
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 79,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 75,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 71,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "HeaderComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HeaderComponent } from './header.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-page',\n  standalone: true,\n  imports: [CommonModule, HeaderComponent],\n  template: `<article>\n  <storybook-header\n    [user]=\"user\"\n    (onLogout)=\"doLogout()\"\n    (onLogin)=\"doLogin()\"\n    (onCreateAccount)=\"doCreateAccount()\"\n  ></storybook-header>\n  <section class=\"storybook-page\">\n    <h2>Pages in Storybook</h2>\n    <p>\n      We recommend building UIs with a\n      <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <strong>component-driven</strong>\n      </a>\n      process starting with atomic components and ending with pages.\n    </p>\n    <p>\n      Render pages with mock data. This makes it easy to build and review page states without\n      needing to navigate to them in your app. Here are some handy patterns for managing page data\n      in Storybook:\n    </p>\n    <ul>\n      <li>\n        Use a higher-level connected component. Storybook helps you compose such data from the\n        \"args\" of child component stories\n      </li>\n      <li>\n        Assemble data in the page component from your services. You can mock these services out\n        using Storybook.\n      </li>\n    </ul>\n    <p>\n      Get a guided tutorial on component-driven development at\n      <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n        Storybook tutorials\n      </a>\n      . Read more in the\n      <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n      .\n    </p>\n    <div class=\"tip-wrapper\">\n      <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n      <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n            id=\"a\"\n            fill=\"#999\"\n          />\n        </g>\n      </svg>\n      Viewports addon in the toolbar\n    </div>\n  </section>\n</article>`,\n  styleUrls: ['./page.css'],\n})\nexport class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-page {\n  margin: 0 auto;\n  padding: 48px 20px;\n  max-width: 600px;\n  color: #333;\n  font-size: 14px;\n  line-height: 24px;\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n\n.storybook-page h2 {\n  display: inline-block;\n  vertical-align: top;\n  margin: 0 0 4px;\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n}\n\n.storybook-page p {\n  margin: 1em 0;\n}\n\n.storybook-page a {\n  color: inherit;\n}\n\n.storybook-page ul {\n  margin: 1em 0;\n  padding-left: 30px;\n}\n\n.storybook-page li {\n  margin-bottom: 8px;\n}\n\n.storybook-page .tip {\n  display: inline-block;\n  vertical-align: top;\n  margin-right: 10px;\n  border-radius: 1em;\n  background: #e7fdd8;\n  padding: 4px 12px;\n  color: #357a14;\n  font-weight: 700;\n  font-size: 11px;\n  line-height: 12px;\n}\n\n.storybook-page .tip-wrapper {\n  margin-top: 40px;\n  margin-bottom: 40px;\n  font-size: 13px;\n  line-height: 20px;\n}\n\n.storybook-page .tip-wrapper svg {\n  display: inline-block;\n  vertical-align: top;\n  margin-top: 3px;\n  margin-right: 4px;\n  width: 12px;\n  height: 12px;\n}\n\n.storybook-page .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "RegionHeaderComponent",
+            "id": "component-RegionHeaderComponent-46e432e18878324ca0517b4f9e70409d9d472a66b8e10b9862b50a12ee8721c459bf01b5dfbd2a0ea19549626f872a03ad0b239e8ae90aed6a91cbacbd03e6d2",
+            "file": "src/app/components/region-header/region-header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-region-header",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./region-header.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "globalStats$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<literal type>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onClearAllBaseRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onClearAllRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onEnableAllBaseRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onEnableAllRegions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "BadgeComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { Observable } from 'rxjs';\nimport { RegionStateService } from '../../services/region-state.service';\nimport { BadgeComponent } from '../badge/badge.component';\n\n@Component({\n  selector: 'app-region-header',\n  imports: [CommonModule, BadgeComponent],\n  templateUrl: './region-header.component.html',\n  styleUrl: './region-header.component.scss'\n})\nexport class RegionHeaderComponent {\n  globalStats$: Observable<{ enabled: { enabledCount: number; baseCount: number; totalCount: number }; base: { enabledCount: number; baseCount: number; totalCount: number } }>;\n\n  constructor(private regionStateService: RegionStateService) {\n    this.globalStats$ = this.regionStateService.getGlobalStats();\n  }\n\n  onEnableAllRegions(): void {\n    this.regionStateService.enableAllRegions();\n  }\n\n  onClearAllRegions(): void {\n    this.regionStateService.clearAllRegions();\n  }\n\n  onEnableAllBaseRegions(): void {\n    this.regionStateService.enableAllBaseRegions();\n  }\n\n  onClearAllBaseRegions(): void {\n    this.regionStateService.clearAllBaseRegions();\n  }\n}",
+            "styleUrl": "./region-header.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 14,
+                "jsdoctags": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "templateData": "<div class=\"top-controls\">\n  <div class=\"control-group\">\n    <div class=\"control-header\">\n      <div class=\"control-label\">\n        <span class=\"label-text\">Enabled Regions:</span>\n        <app-badge [count]=\"(globalStats$ | async)?.enabled?.enabledCount || 0\" \n                   [total]=\"(globalStats$ | async)?.enabled?.totalCount || 0\">\n        </app-badge>\n      </div>\n      <div class=\"control-buttons\">\n        <button class=\"btn-cta\" (click)=\"onEnableAllRegions()\">\n          <i class=\"fas fa-check-circle\"></i>\n          <span>Enable all</span>\n        </button>\n        <button class=\"btn-cta\" (click)=\"onClearAllRegions()\">\n          <i class=\"fas fa-times-circle\"></i>\n          <span>Clear all</span>\n        </button>\n      </div>\n    </div>\n    <p class=\"description-text\">Text</p>\n  </div>\n\n  <div class=\"control-group\">\n    <div class=\"control-header\">\n      <div class=\"control-label\">\n        <span class=\"label-text\">Base Regions:</span>\n        <app-badge [count]=\"(globalStats$ | async)?.base?.baseCount || 0\" \n                   [total]=\"(globalStats$ | async)?.base?.totalCount || 0\">\n        </app-badge>\n      </div>\n      <div class=\"control-buttons\">\n        <button class=\"btn-cta\" (click)=\"onEnableAllBaseRegions()\">\n          <i class=\"fas fa-check-circle\"></i>\n          <span>Enable all</span>\n        </button>\n        <button class=\"btn-cta\" (click)=\"onClearAllBaseRegions()\">\n          <i class=\"fas fa-times-circle\"></i>\n          <span>Clear all</span>\n        </button>\n      </div>\n    </div>\n    <p class=\"description-text\">Text</p>\n  </div>\n</div>"
+        },
+        {
+            "name": "RegionItemComponent",
+            "id": "component-RegionItemComponent-793e5dcb44ced74ad7ab3a4e253fcc85982a9fa21cc660d58cac45791643622d81b946ed7b6d6a729550b28844d7cd32b7af9387bc12a06a01c1d1267917e0c6",
+            "file": "src/app/components/region-item/region-item.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-region-item",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./region-item.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "city",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "City",
+                    "decorators": []
+                },
+                {
+                    "name": "isSelected",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "regionId",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "toggleBase",
+                    "defaultValue": "new EventEmitter<{ cityId: string }>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "toggleSelection",
+                    "defaultValue": "new EventEmitter<{ cityId: string }>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "onItemClick",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onToggleBase",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleSelection",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "BaseTagComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { City } from '../../models';\nimport { BaseTagComponent } from '../base-tag/base-tag.component';\n\n@Component({\n  selector: 'app-region-item',\n  imports: [CommonModule, BaseTagComponent],\n  templateUrl: './region-item.component.html',\n  styleUrl: './region-item.component.scss'\n})\nexport class RegionItemComponent {\n  @Input() city!: City;\n  @Input() regionId!: string;\n  @Input() isSelected: boolean = false;\n  \n  @Output() toggleSelection = new EventEmitter<{ cityId: string }>();\n  @Output() toggleBase = new EventEmitter<{ cityId: string }>();\n\n  onItemClick(): void {\n    // Could emit item selection event here for UI feedback\n    // For now, we'll just handle the checkbox toggle\n  }\n\n  onToggleSelection(event: Event): void {\n    event.stopPropagation();\n    this.toggleSelection.emit({ cityId: this.city.id });\n  }\n\n  onToggleBase(event: Event): void {\n    event.stopPropagation();\n    this.toggleBase.emit({ cityId: this.city.id });\n  }\n}",
+            "styleUrl": "./region-item.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"region-item\" \n     [class.enabled]=\"city.isEnabled\"\n     [class.selected]=\"isSelected\"\n     (click)=\"onItemClick()\">\n  \n  <div class=\"item-info\">\n    <div class=\"item-checkbox\" \n         [class.checked]=\"city.isEnabled\"\n         (click)=\"onToggleSelection($event)\">\n      <i class=\"fas\" \n         [class.fa-check-circle]=\"city.isEnabled\"\n         [class.fa-plus-circle]=\"!city.isEnabled\"></i>\n    </div>\n    \n    <div class=\"item-flag\">{{ city.flag }}</div>\n    \n    <span class=\"item-name\">{{ city.name }}</span>\n  </div>\n  \n  <app-base-tag \n    [isActive]=\"city.isBaseRegion\"\n    (toggle)=\"onToggleBase($event)\">\n  </app-base-tag>\n</div>"
+        },
+        {
+            "name": "RegionsComponent",
+            "id": "component-RegionsComponent-b96029b2735b97d5ddd7b52312fe011f888346a43de0b7e67ce8a050f664e2e91c5fa5d14c7322ef93be273deff20b87c3381dc2dac82bfd4584d04f94a9c26c",
+            "file": "src/app/pages/regions/regions.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-regions",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./regions.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RegionSettingsComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RegionSettingsComponent } from '../../components/region-settings/region-settings.component';\n\n@Component({\n  selector: 'app-regions',\n  imports: [RegionSettingsComponent],\n  templateUrl: './regions.component.html',\n  styleUrl: './regions.component.scss'\n})\nexport class RegionsComponent {\n\n}\n",
+            "styleUrl": "./regions.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"regions-page\">\n  <div class=\"page-header\">\n    <h1 class=\"page-title\">Region Settings Prototype</h1>\n    <p class=\"page-subtitle\">Interactive demo converted from Figma design specifications</p>\n  </div>\n\n  <div class=\"prototype-container\">\n    <app-region-settings></app-region-settings>\n  </div>\n</div>"
+        },
+        {
+            "name": "RegionSectionComponent",
+            "id": "component-RegionSectionComponent-490d437d7d5faaee1c113e6c68f23f1ad65c427847266bd353f6cffa71c8fd85da106c5e7d2494b9cff755839aadac15671242e7c6af47d6a0931a3016309177",
+            "file": "src/app/components/region-section/region-section.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-region-section",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./region-section.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "isExpanded",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "region",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "Region",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "toggleBaseRegion",
+                    "defaultValue": "new EventEmitter<{ regionId: string; cityId: string }>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "toggleCitySelection",
+                    "defaultValue": "new EventEmitter<{ regionId: string; cityId: string }>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "toggleExpansion",
+                    "defaultValue": "new EventEmitter<string>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "toggleSelection",
+                    "defaultValue": "new EventEmitter<string>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getBaseCount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 53,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getEnabledCount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 49,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getFirstColumnCities",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "City[]",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getSecondColumnCities",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "City[]",
+                    "typeParameters": [],
+                    "line": 62,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onToggleBaseRegion",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleCitySelection",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleExpansion",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 26,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onToggleSelection",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "trackByCityId",
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "city",
+                            "type": "City",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "city",
+                            "type": "City",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "BadgeComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "RegionItemComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { Region, City } from '../../models';\nimport { BadgeComponent } from '../badge/badge.component';\nimport { RegionItemComponent } from '../region-item/region-item.component';\n\n@Component({\n  selector: 'app-region-section',\n  imports: [CommonModule, BadgeComponent, RegionItemComponent],\n  templateUrl: './region-section.component.html',\n  styleUrl: './region-section.component.scss'\n})\nexport class RegionSectionComponent {\n  @Input() region!: Region;\n  @Input() isExpanded: boolean = false;\n  \n  @Output() toggleExpansion = new EventEmitter<string>();\n  @Output() toggleSelection = new EventEmitter<string>();\n  @Output() toggleCitySelection = new EventEmitter<{ regionId: string; cityId: string }>();\n  @Output() toggleBaseRegion = new EventEmitter<{ regionId: string; cityId: string }>();\n\n  trackByCityId(index: number, city: City): string {\n    return city.id;\n  }\n\n  onToggleExpansion(): void {\n    this.toggleExpansion.emit(this.region.id);\n  }\n\n  onToggleSelection(event: Event): void {\n    event.stopPropagation();\n    this.toggleSelection.emit(this.region.id);\n  }\n\n  onToggleCitySelection(event: { cityId: string }): void {\n    this.toggleCitySelection.emit({ \n      regionId: this.region.id, \n      cityId: event.cityId \n    });\n  }\n\n  onToggleBaseRegion(event: { cityId: string }): void {\n    this.toggleBaseRegion.emit({ \n      regionId: this.region.id, \n      cityId: event.cityId \n    });\n  }\n\n  getEnabledCount(): number {\n    return this.region.cities.filter(city => city.isEnabled).length;\n  }\n\n  getBaseCount(): number {\n    return this.region.cities.filter(city => city.isBaseRegion).length;\n  }\n\n  getFirstColumnCities(): City[] {\n    const midpoint = Math.ceil(this.region.cities.length / 2);\n    return this.region.cities.slice(0, midpoint);\n  }\n\n  getSecondColumnCities(): City[] {\n    const midpoint = Math.ceil(this.region.cities.length / 2);\n    return this.region.cities.slice(midpoint);\n  }\n}",
+            "styleUrl": "./region-section.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"region-section\" \n     [class.expanded]=\"isExpanded\" \n     [class.collapsed]=\"!isExpanded\">\n  \n  <div class=\"region-header\" (click)=\"onToggleExpansion()\">\n    <div class=\"region-info\">\n      <div class=\"region-toggle\">\n        <i class=\"fas\" \n           [class.fa-chevron-right]=\"!isExpanded\"\n           [class.fa-chevron-down]=\"isExpanded\"></i>\n      </div>\n      <div class=\"region-label\">\n        <div class=\"region-checkbox\" \n             [class.checked]=\"region.isSelected\"\n             (click)=\"onToggleSelection($event)\">\n          <i class=\"fas\" \n             [class.fa-check-circle]=\"region.isSelected\"\n             [class.fa-plus-circle]=\"!region.isSelected\"></i>\n        </div>\n        <span class=\"region-name\">{{ region.name }}</span>\n      </div>\n    </div>\n    <div class=\"region-stats\">\n      <div class=\"stat-group\">\n        <span class=\"stat-label\">Enabled Regions:</span>\n        <app-badge [count]=\"getEnabledCount()\" [total]=\"region.cities.length\"></app-badge>\n      </div>\n      <div class=\"stat-group\">\n        <span class=\"stat-label\">Base Regions:</span>\n        <app-badge [count]=\"getBaseCount()\" [total]=\"region.cities.length\"></app-badge>\n      </div>\n    </div>\n  </div>\n  \n  <div class=\"region-details\" [style.display]=\"isExpanded ? 'flex' : 'none'\">\n    <div class=\"region-column\">\n      <app-region-item \n        *ngFor=\"let city of getFirstColumnCities(); trackBy: trackByCityId\"\n        [city]=\"city\"\n        [regionId]=\"region.id\"\n        (toggleSelection)=\"onToggleCitySelection($event)\"\n        (toggleBase)=\"onToggleBaseRegion($event)\">\n      </app-region-item>\n    </div>\n    \n    <div class=\"region-column\">\n      <app-region-item \n        *ngFor=\"let city of getSecondColumnCities(); trackBy: trackByCityId\"\n        [city]=\"city\"\n        [regionId]=\"region.id\"\n        (toggleSelection)=\"onToggleCitySelection($event)\"\n        (toggleBase)=\"onToggleBaseRegion($event)\">\n      </app-region-item>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "RegionSettingsComponent",
+            "id": "component-RegionSettingsComponent-252c102938f26fcec38a9ba1ec43528e537feb4416b831eea79da33e38c75ce50cc19c81593b36b02ecd17fb456847cc79b9f06f88149da6616477e2a181c838",
+            "file": "src/app/components/region-settings/region-settings.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-region-settings",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./region-settings.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "destroy$",
+                    "defaultValue": "new Subject<void>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 24,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "filteredRegions$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<Region[]>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onToggleBaseRegion",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 58,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleCitySelection",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 54,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleRegionExpansion",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleRegionSelection",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 50,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "trackByRegionId",
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "region",
+                            "type": "Region",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "region",
+                            "type": "Region",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "RegionHeaderComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "SearchComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "RegionSectionComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, OnDestroy } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { Observable, Subject, takeUntil } from 'rxjs';\nimport { Region } from '../../models';\nimport { RegionStateService } from '../../services/region-state.service';\nimport { SearchService } from '../../services/search.service';\nimport { RegionHeaderComponent } from '../region-header/region-header.component';\nimport { SearchComponent } from '../search/search.component';\nimport { RegionSectionComponent } from '../region-section/region-section.component';\n\n@Component({\n  selector: 'app-region-settings',\n  imports: [\n    CommonModule,\n    RegionHeaderComponent,\n    SearchComponent,\n    RegionSectionComponent\n  ],\n  templateUrl: './region-settings.component.html',\n  styleUrl: './region-settings.component.scss'\n})\nexport class RegionSettingsComponent implements OnInit, OnDestroy {\n  filteredRegions$: Observable<Region[]>;\n  private destroy$ = new Subject<void>();\n\n  constructor(\n    private regionStateService: RegionStateService,\n    private searchService: SearchService\n  ) {\n    this.filteredRegions$ = this.searchService.getFilteredRegions();\n  }\n\n  ngOnInit(): void {\n    // Component initialization logic can go here\n  }\n\n  ngOnDestroy(): void {\n    this.destroy$.next();\n    this.destroy$.complete();\n  }\n\n  trackByRegionId(index: number, region: Region): string {\n    return region.id;\n  }\n\n  onToggleRegionExpansion(regionId: string): void {\n    this.regionStateService.toggleRegionExpansion(regionId);\n  }\n\n  onToggleRegionSelection(regionId: string): void {\n    this.regionStateService.toggleRegionSelection(regionId);\n  }\n\n  onToggleCitySelection(event: { regionId: string; cityId: string }): void {\n    this.regionStateService.toggleCitySelection(event.regionId, event.cityId);\n  }\n\n  onToggleBaseRegion(event: { regionId: string; cityId: string }): void {\n    this.regionStateService.toggleBaseRegion(event.regionId, event.cityId);\n  }\n}",
+            "styleUrl": "./region-settings.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "searchService",
+                        "type": "SearchService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 24,
+                "jsdoctags": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "searchService",
+                        "type": "SearchService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "implements": [
+                "OnInit",
+                "OnDestroy"
+            ],
+            "templateData": "<div class=\"settings-panel\">\n  <!-- Title -->\n  <div class=\"title-section\">\n    <h1 class=\"settings-title\">Settings</h1>\n  </div>\n\n  <!-- Content -->\n  <div class=\"content-section\">\n    <!-- Top Controls -->\n    <app-region-header></app-region-header>\n\n    <!-- Search -->\n    <app-search></app-search>\n\n    <!-- Regions List -->\n    <div class=\"regions-list\">\n      <app-region-section \n        *ngFor=\"let region of filteredRegions$ | async; trackBy: trackByRegionId\"\n        [region]=\"region\"\n        [isExpanded]=\"region.isExpanded\"\n        (toggleExpansion)=\"onToggleRegionExpansion($event)\"\n        (toggleSelection)=\"onToggleRegionSelection($event)\"\n        (toggleCitySelection)=\"onToggleCitySelection($event)\"\n        (toggleBaseRegion)=\"onToggleBaseRegion($event)\">\n      </app-region-section>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "RegionsPrototypeBComponent",
+            "id": "component-RegionsPrototypeBComponent-e56e2af210b6799c3f7007d7b6f2ce8f79d54b68b6b6e2c1ed2a2a74420ece9cbc4cd83f77e54190a9b3e8a9fb433fddf27626884f5629341a9b5368216150b9",
+            "file": "src/app/pages/regions-prototype-b/regions-prototype-b.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-regions-prototype-b",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./regions-prototype-b.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "destroy$",
+                    "defaultValue": "new Subject<void>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 27,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "filteredRegions$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<Region[]>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "globalStats$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<literal type>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getEnabledCount",
+                    "args": [
+                        {
+                            "name": "region",
+                            "type": "Region",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "region",
+                            "type": "Region",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onToggleBaseRegion",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 62,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleCitySelection",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 58,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "literal type",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleRegionExpansion",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 50,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onToggleRegionSelection",
+                    "args": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 54,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "regionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "trackByRegionId",
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "region",
+                            "type": "Region",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "region",
+                            "type": "Region",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "RegionHeaderComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "SearchComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "RegionSectionComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "BadgeComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, OnDestroy } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { Observable, Subject, takeUntil } from 'rxjs';\nimport { Region } from '../../models';\nimport { RegionStateService } from '../../services/region-state.service';\nimport { SearchService } from '../../services/search.service';\nimport { RegionHeaderComponent } from '../../components/region-header/region-header.component';\nimport { SearchComponent } from '../../components/search/search.component';\nimport { RegionSectionComponent } from '../../components/region-section/region-section.component';\nimport { BadgeComponent } from '../../components/badge/badge.component';\n\n@Component({\n  selector: 'app-regions-prototype-b',\n  imports: [\n    CommonModule,\n    RegionHeaderComponent,\n    SearchComponent,\n    RegionSectionComponent,\n    BadgeComponent\n  ],\n  templateUrl: './regions-prototype-b.component.html',\n  styleUrl: './regions-prototype-b.component.scss'\n})\nexport class RegionsPrototypeBComponent implements OnInit, OnDestroy {\n  filteredRegions$: Observable<Region[]>;\n  globalStats$: Observable<{ enabled: { enabledCount: number; baseCount: number; totalCount: number }; base: { enabledCount: number; baseCount: number; totalCount: number } }>;\n  private destroy$ = new Subject<void>();\n\n  constructor(\n    private regionStateService: RegionStateService,\n    private searchService: SearchService\n  ) {\n    this.filteredRegions$ = this.searchService.getFilteredRegions();\n    this.globalStats$ = this.regionStateService.getGlobalStats();\n  }\n\n  ngOnInit(): void {\n    // Component initialization logic can go here\n  }\n\n  ngOnDestroy(): void {\n    this.destroy$.next();\n    this.destroy$.complete();\n  }\n\n  trackByRegionId(index: number, region: Region): string {\n    return region.id;\n  }\n\n  onToggleRegionExpansion(regionId: string): void {\n    this.regionStateService.toggleRegionExpansion(regionId);\n  }\n\n  onToggleRegionSelection(regionId: string): void {\n    this.regionStateService.toggleRegionSelection(regionId);\n  }\n\n  onToggleCitySelection(event: { regionId: string; cityId: string }): void {\n    this.regionStateService.toggleCitySelection(event.regionId, event.cityId);\n  }\n\n  onToggleBaseRegion(event: { regionId: string; cityId: string }): void {\n    this.regionStateService.toggleBaseRegion(event.regionId, event.cityId);\n  }\n\n  getEnabledCount(region: Region): number {\n    return region.cities.filter(city => city.isEnabled).length;\n  }\n}",
+            "styleUrl": "./regions-prototype-b.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "searchService",
+                        "type": "SearchService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 27,
+                "jsdoctags": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "searchService",
+                        "type": "SearchService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "implements": [
+                "OnInit",
+                "OnDestroy"
+            ],
+            "templateData": "<div class=\"dashboard-container\">\n  <!-- Page Header -->\n  <div class=\"page-header\">\n    <div class=\"header-content\">\n      <h1 class=\"page-title\">Regional Management Dashboard</h1>\n      <p class=\"page-subtitle\">Advanced region configuration and monitoring</p>\n    </div>\n  </div>\n\n  <!-- Main Dashboard Grid -->\n  <div class=\"dashboard-grid\">\n    \n    <!-- Left Sidebar: Controls & Stats -->\n    <div class=\"sidebar\">\n      <div class=\"control-panel\">\n        <h2 class=\"panel-title\">Quick Actions</h2>\n        <app-region-header></app-region-header>\n      </div>\n      \n      <div class=\"search-panel\">\n        <h2 class=\"panel-title\">Search & Filter</h2>\n        <app-search></app-search>\n      </div>\n    </div>\n\n    <!-- Main Content: Regions in Card Grid -->\n    <div class=\"main-content\">\n      <div class=\"content-header\">\n        <h2 class=\"content-title\">Regional Overview</h2>\n        <div class=\"view-toggle\">\n          <button class=\"toggle-btn active\">\n            <i class=\"fas fa-th-large\"></i>\n            Card View\n          </button>\n          <button class=\"toggle-btn\">\n            <i class=\"fas fa-list\"></i>\n            List View\n          </button>\n        </div>\n      </div>\n\n      <!-- Regions Grid -->\n      <div class=\"regions-grid\">\n        <div class=\"region-card\" \n             *ngFor=\"let region of filteredRegions$ | async; trackBy: trackByRegionId\">\n          <div class=\"card-header\">\n            <h3 class=\"region-title\">{{ region.name }}</h3>\n            <div class=\"region-stats-mini\">\n              <app-badge [count]=\"getEnabledCount(region)\" [total]=\"region.cities.length\"></app-badge>\n            </div>\n          </div>\n          \n          <div class=\"card-content\">\n            <app-region-section \n              [region]=\"region\"\n              [isExpanded]=\"region.isExpanded\"\n              (toggleExpansion)=\"onToggleRegionExpansion($event)\"\n              (toggleSelection)=\"onToggleRegionSelection($event)\"\n              (toggleCitySelection)=\"onToggleCitySelection($event)\"\n              (toggleBaseRegion)=\"onToggleBaseRegion($event)\">\n            </app-region-section>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- Right Sidebar: Summary & Analytics -->\n    <div class=\"analytics-panel\">\n      <div class=\"summary-card\">\n        <h2 class=\"panel-title\">Global Summary</h2>\n        <div class=\"summary-stats\">\n          <div class=\"stat-item\">\n            <div class=\"stat-label\">Total Regions</div>\n            <div class=\"stat-value\">{{ (filteredRegions$ | async)?.length || 0 }}</div>\n          </div>\n          <div class=\"stat-item\">\n            <div class=\"stat-label\">Enabled Cities</div>\n            <div class=\"stat-value\">{{ (globalStats$ | async)?.enabled?.enabledCount || 0 }}</div>\n          </div>\n          <div class=\"stat-item\">\n            <div class=\"stat-label\">Base Regions</div>\n            <div class=\"stat-value\">{{ (globalStats$ | async)?.base?.baseCount || 0 }}</div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"activity-card\">\n        <h2 class=\"panel-title\">Recent Activity</h2>\n        <div class=\"activity-list\">\n          <div class=\"activity-item\">\n            <i class=\"fas fa-check-circle activity-icon success\"></i>\n            <div class=\"activity-text\">\n              <div class=\"activity-title\">Region Enabled</div>\n              <div class=\"activity-time\">2 minutes ago</div>\n            </div>\n          </div>\n          <div class=\"activity-item\">\n            <i class=\"fas fa-star activity-icon base\"></i>\n            <div class=\"activity-text\">\n              <div class=\"activity-title\">Base Region Set</div>\n              <div class=\"activity-time\">5 minutes ago</div>\n            </div>\n          </div>\n          <div class=\"activity-item\">\n            <i class=\"fas fa-search activity-icon search\"></i>\n            <div class=\"activity-text\">\n              <div class=\"activity-title\">Search Performed</div>\n              <div class=\"activity-time\">8 minutes ago</div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+        },
+        {
+            "name": "SearchComponent",
+            "id": "component-SearchComponent-786f8ddb329f9c3f8bb9c17eca2b7ba50584c386fadb07fe5db91d60fd266cc72ee4f644564e2cfb7d7844605d84955592265e0914df4798aa512fd60170bf9a",
+            "file": "src/app/components/search/search.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-search",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./search.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "searchTerm$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<string>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onSearchChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { Observable } from 'rxjs';\nimport { RegionStateService } from '../../services/region-state.service';\n\n@Component({\n  selector: 'app-search',\n  imports: [CommonModule],\n  templateUrl: './search.component.html',\n  styleUrl: './search.component.scss'\n})\nexport class SearchComponent {\n  searchTerm$: Observable<string>;\n\n  constructor(private regionStateService: RegionStateService) {\n    this.searchTerm$ = this.regionStateService.searchTerm$;\n  }\n\n  onSearchChange(event: Event): void {\n    const target = event.target as HTMLInputElement;\n    this.regionStateService.setSearchTerm(target.value);\n  }\n}",
+            "styleUrl": "./search.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 13,
+                "jsdoctags": [
+                    {
+                        "name": "regionStateService",
+                        "type": "RegionStateService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "templateData": "<div class=\"search-container\">\n  <div class=\"search-input\">\n    <i class=\"fas fa-search search-icon\"></i>\n    <input \n      type=\"text\" \n      placeholder=\"Search\" \n      [value]=\"searchTerm$ | async\"\n      (input)=\"onSearchChange($event)\"\n      #searchInput>\n  </div>\n</div>"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 12,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/badge/badge.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BadgeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/base-tag/base-tag.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BaseTagComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/region-header/region-header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RegionHeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/region-item/region-item.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RegionItemComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/region-section/region-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RegionSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/16",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/region-settings/region-settings.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RegionSettingsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/search/search.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SearchComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/region.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "City",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/region.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Region",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/region.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "RegionState",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/region.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "RegionStats",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/home/home.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HomeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/regions-prototype-b/regions-prototype-b.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RegionsPrototypeBComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/regions/regions.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RegionsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/region-data.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "RegionDataService",
+                "coveragePercent": 71,
+                "coverageCount": "5/7",
+                "status": "good"
+            },
+            {
+                "filePath": "src/app/services/region-state.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "RegionStateService",
+                "coveragePercent": 70,
+                "coverageCount": "14/20",
+                "status": "good"
+            },
+            {
+                "filePath": "src/app/services/search.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "SearchService",
+                "coveragePercent": 77,
+                "coverageCount": "7/9",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/app/shared/navbar/navbar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NavbarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/user.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            }
+        ]
+    }
+}
