@@ -1,0 +1,11 @@
+<div class="search-container">
+  <div class="search-input">
+    <i class="fas fa-search search-icon"></i>
+    <input 
+      type="text" 
+      placeholder="Search" 
+      [value]="searchTerm$ | async"
+      (input)="onSearchChange($event)"
+      #searchInput>
+  </div>
+</div>

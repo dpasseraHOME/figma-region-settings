@@ -1,0 +1,44 @@
+/* Global styles for the Region Settings Angular App */
+
+// Import our design system first (using modern @use syntax)
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+// Import Font Awesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+// Global reset and base styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  background-color: #f8f9fa;
+  color: $text-body;
+  line-height: $line-height-normal;
+}
+
+// Global utility classes
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Focus outline for accessibility
+:focus-visible {
+  outline: 2px solid $accent-green;
+  outline-offset: 2px;
+}

@@ -1,0 +1,44 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  .search-input {
+    background-color: $white;
+    border: 1px solid #b4bdc5;
+    border-radius: 8px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+
+    .search-icon {
+      color: #b4bdc5;
+      font-size: 16px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #b4bdc5;
+      font-size: 15px;
+      font-weight: $font-regular;
+      line-height: 23px;
+      flex: 1;
+
+      &::placeholder {
+        color: #b4bdc5;
+      }
+
+      &:focus {
+        color: $text-body;
+      }
+    }
+  }
+}

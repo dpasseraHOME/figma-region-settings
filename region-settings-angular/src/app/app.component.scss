@@ -1,0 +1,7 @@
+@use '../styles/variables' as *;
+
+.main-content {
+  min-height: calc(100vh - 64px); // Account for navbar height
+  background-color: #f8f9fa;
+  padding: $spacing-xl 0;
+}

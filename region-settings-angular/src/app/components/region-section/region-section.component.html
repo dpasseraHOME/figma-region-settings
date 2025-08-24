@@ -1,0 +1,56 @@
+<div class="region-section" 
+     [class.expanded]="isExpanded" 
+     [class.collapsed]="!isExpanded">
+  
+  <div class="region-header" (click)="onToggleExpansion()">
+    <div class="region-info">
+      <div class="region-toggle">
+        <i class="fas" 
+           [class.fa-chevron-right]="!isExpanded"
+           [class.fa-chevron-down]="isExpanded"></i>
+      </div>
+      <div class="region-label">
+        <div class="region-checkbox" 
+             [class.checked]="region.isSelected"
+             (click)="onToggleSelection($event)">
+          <i class="fas" 
+             [class.fa-check-circle]="region.isSelected"
+             [class.fa-plus-circle]="!region.isSelected"></i>
+        </div>
+        <span class="region-name">{{ region.name }}</span>
+      </div>
+    </div>
+    <div class="region-stats">
+      <div class="stat-group">
+        <span class="stat-label">Enabled Regions:</span>
+        <app-badge [count]="getEnabledCount()" [total]="region.cities.length"></app-badge>
+      </div>
+      <div class="stat-group">
+        <span class="stat-label">Base Regions:</span>
+        <app-badge [count]="getBaseCount()" [total]="region.cities.length"></app-badge>
+      </div>
+    </div>
+  </div>
+  
+  <div class="region-details" [style.display]="isExpanded ? 'flex' : 'none'">
+    <div class="region-column">
+      <app-region-item 
+        *ngFor="let city of getFirstColumnCities(); trackBy: trackByCityId"
+        [city]="city"
+        [regionId]="region.id"
+        (toggleSelection)="onToggleCitySelection($event)"
+        (toggleBase)="onToggleBaseRegion($event)">
+      </app-region-item>
+    </div>
+    
+    <div class="region-column">
+      <app-region-item 
+        *ngFor="let city of getSecondColumnCities(); trackBy: trackByCityId"
+        [city]="city"
+        [regionId]="region.id"
+        (toggleSelection)="onToggleCitySelection($event)"
+        (toggleBase)="onToggleBaseRegion($event)">
+      </app-region-item>
+    </div>
+  </div>
+</div>

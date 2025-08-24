@@ -1,0 +1,47 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.settings-panel {
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: 
+    0px 1px 3px 0px rgba(12, 12, 12, 0.1),
+    0px 1px 2px -1px rgba(12, 12, 12, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  .title-section {
+    margin-bottom: 20px;
+
+    .settings-title {
+      color: $text-strong;
+      font-size: 18px;
+      font-weight: $font-medium;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .regions-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .settings-panel {
+    padding: 20px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="settings-panel">
+  <!-- Title -->
+  <div class="title-section">
+    <h1 class="settings-title">Settings</h1>
+  </div>
+
+  <!-- Content -->
+  <div class="content-section">
+    <!-- Top Controls -->
+    <app-region-header></app-region-header>
+
+    <!-- Search -->
+    <app-search></app-search>
+
+    <!-- Regions List -->
+    <div class="regions-list">
+      <app-region-section 
+        *ngFor="let region of filteredRegions$ | async; trackBy: trackByRegionId"
+        [region]="region"
+        [isExpanded]="region.isExpanded"
+        (toggleExpansion)="onToggleRegionExpansion($event)"
+        (toggleSelection)="onToggleRegionSelection($event)"
+        (toggleCitySelection)="onToggleCitySelection($event)"
+        (toggleBaseRegion)="onToggleBaseRegion($event)">
+      </app-region-section>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.navbar {
+  background-color: $white;
+  border-bottom: 1px solid $border-weak;
+  box-shadow: $shadow-sm;
+  position: sticky;
+  top: 0;
+  z-index: $z-index-dropdown;
+
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-lg;
+    @include flex-between;
+    height: 64px;
+  }
+
+  .navbar-brand {
+    .brand-link {
+      @include flex-start;
+      gap: $spacing-sm;
+      text-decoration: none;
+      color: $text-strong;
+      font-weight: $font-semibold;
+      font-size: $font-size-lg;
+      transition: color $transition-normal;
+
+      &:hover {
+        color: $accent-green;
+      }
+
+      i {
+        font-size: $font-size-xl;
+        color: $accent-green;
+      }
+    }
+  }
+
+  .navbar-menu {
+    @include flex-start;
+    gap: $spacing-xl;
+  }
+
+  .nav-link {
+    @include flex-start;
+    gap: $spacing-xs;
+    text-decoration: none;
+    color: $text-muted;
+    font-weight: $font-medium;
+    font-size: $font-size-sm;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-md;
+    transition: all $transition-normal;
+    position: relative;
+
+    &:hover {
+      color: $text-strong;
+      background-color: #f8f9fa;
+    }
+
+    &.active {
+      color: $accent-green;
+      background-color: rgba(47, 197, 132, 0.1);
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -17px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 4px;
+        background-color: $accent-green;
+        border-radius: 50%;
+      }
+    }
+
+    i {
+      font-size: $font-size-sm;
+    }
+
+    span {
+      font-size: $font-size-sm;
+    }
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .navbar {
+    .navbar-container {
+      padding: 0 $spacing-md;
+    }
+
+    .navbar-menu {
+      gap: $spacing-md;
+    }
+
+    .nav-link {
+      padding: $spacing-xs $spacing-sm;
+      
+      span {
+        display: none;
+      }
+    }
+
+    .navbar-brand .brand-link span {
+      display: none;
+    }
+  }
+}

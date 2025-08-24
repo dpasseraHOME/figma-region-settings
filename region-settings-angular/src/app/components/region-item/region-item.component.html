@@ -1,0 +1,24 @@
+<div class="region-item" 
+     [class.enabled]="city.isEnabled"
+     [class.selected]="isSelected"
+     (click)="onItemClick()">
+  
+  <div class="item-info">
+    <div class="item-checkbox" 
+         [class.checked]="city.isEnabled"
+         (click)="onToggleSelection($event)">
+      <i class="fas" 
+         [class.fa-check-circle]="city.isEnabled"
+         [class.fa-plus-circle]="!city.isEnabled"></i>
+    </div>
+    
+    <div class="item-flag">{{ city.flag }}</div>
+    
+    <span class="item-name">{{ city.name }}</span>
+  </div>
+  
+  <app-base-tag 
+    [isActive]="city.isBaseRegion"
+    (toggle)="onToggleBase($event)">
+  </app-base-tag>
+</div>

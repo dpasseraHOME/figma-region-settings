@@ -1,0 +1,73 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.region-item {
+  background-color: $white;
+  border: 1px solid $border-weak;
+  border-radius: 6px;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+
+  &.selected {
+    box-shadow: inset 2px 0 0 $accent-green;
+  }
+
+  .item-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .item-checkbox {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 16px;
+        color: $text-muted;
+        transition: color 0.2s ease;
+
+        &.fa-check-circle {
+          color: $accent-green;
+        }
+
+        &.fa-plus-circle {
+          color: $text-muted;
+        }
+      }
+
+      &.checked i {
+        color: $accent-green;
+      }
+    }
+
+    .item-flag {
+      width: 16px;
+      height: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      border-radius: 2px;
+      border: 0.3px solid #e5e7eb;
+    }
+
+    .item-name {
+      color: $text-muted;
+      font-size: 14px;
+      font-weight: $font-semibold;
+      line-height: 20px;
+    }
+  }
+}

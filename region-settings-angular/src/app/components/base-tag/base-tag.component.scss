@@ -1,0 +1,28 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.base-tag {
+  @include base-tag;
+  
+  i {
+    color: $white;
+    font-size: 12px;
+  }
+
+  span {
+    color: $white;
+    font-size: 12px;
+    font-weight: $font-semibold;
+    line-height: 15px;
+  }
+
+  &.active {
+    i {
+      color: $white;
+    }
+
+    span {
+      color: $white;
+    }
+  }
+}

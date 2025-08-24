@@ -1,0 +1,50 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.regions-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .page-title {
+    @include text-title;
+    font-size: 2.5rem;
+    margin-bottom: $spacing-md;
+  }
+
+  .page-subtitle {
+    @include text-body;
+    font-size: $font-size-lg;
+    color: $text-muted;
+    margin: 0;
+  }
+}
+
+.prototype-container {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  overflow: hidden;
+  
+  // Remove any extra padding since the component will handle it
+  app-region-settings {
+    display: block;
+    width: 100%;
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .regions-page {
+    padding: 0 $spacing-md;
+  }
+
+  .page-header .page-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,45 @@
+<div class="top-controls">
+  <div class="control-group">
+    <div class="control-header">
+      <div class="control-label">
+        <span class="label-text">Enabled Regions:</span>
+        <app-badge [count]="(globalStats$ | async)?.enabled?.enabledCount || 0" 
+                   [total]="(globalStats$ | async)?.enabled?.totalCount || 0">
+        </app-badge>
+      </div>
+      <div class="control-buttons">
+        <button class="btn-cta" (click)="onEnableAllRegions()">
+          <i class="fas fa-check-circle"></i>
+          <span>Enable all</span>
+        </button>
+        <button class="btn-cta" (click)="onClearAllRegions()">
+          <i class="fas fa-times-circle"></i>
+          <span>Clear all</span>
+        </button>
+      </div>
+    </div>
+    <p class="description-text">Text</p>
+  </div>
+
+  <div class="control-group">
+    <div class="control-header">
+      <div class="control-label">
+        <span class="label-text">Base Regions:</span>
+        <app-badge [count]="(globalStats$ | async)?.base?.baseCount || 0" 
+                   [total]="(globalStats$ | async)?.base?.totalCount || 0">
+        </app-badge>
+      </div>
+      <div class="control-buttons">
+        <button class="btn-cta" (click)="onEnableAllBaseRegions()">
+          <i class="fas fa-check-circle"></i>
+          <span>Enable all</span>
+        </button>
+        <button class="btn-cta" (click)="onClearAllBaseRegions()">
+          <i class="fas fa-times-circle"></i>
+          <span>Clear all</span>
+        </button>
+      </div>
+    </div>
+    <p class="description-text">Text</p>
+  </div>
+</div>
