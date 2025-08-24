@@ -1,0 +1,115 @@
+<div class="dashboard-container">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="header-content">
+      <h1 class="page-title">Regional Management Dashboard</h1>
+      <p class="page-subtitle">Advanced region configuration and monitoring</p>
+    </div>
+  </div>
+
+  <!-- Main Dashboard Grid -->
+  <div class="dashboard-grid">
+    
+    <!-- Left Sidebar: Controls & Stats -->
+    <div class="sidebar">
+      <div class="control-panel">
+        <h2 class="panel-title">Quick Actions</h2>
+        <app-region-header></app-region-header>
+      </div>
+      
+      <div class="search-panel">
+        <h2 class="panel-title">Search & Filter</h2>
+        <app-search></app-search>
+      </div>
+    </div>
+
+    <!-- Main Content: Regions in Card Grid -->
+    <div class="main-content">
+      <div class="content-header">
+        <h2 class="content-title">Regional Overview</h2>
+        <div class="view-toggle">
+          <button class="toggle-btn active">
+            <i class="fas fa-th-large"></i>
+            Card View
+          </button>
+          <button class="toggle-btn">
+            <i class="fas fa-list"></i>
+            List View
+          </button>
+        </div>
+      </div>
+
+      <!-- Regions Grid -->
+      <div class="regions-grid">
+        <div class="region-card" 
+             *ngFor="let region of filteredRegions$ | async; trackBy: trackByRegionId">
+          <div class="card-header">
+            <h3 class="region-title">{{ region.name }}</h3>
+            <div class="region-stats-mini">
+              <app-badge [count]="getEnabledCount(region)" [total]="region.cities.length"></app-badge>
+            </div>
+          </div>
+          
+          <div class="card-content">
+            <app-region-section 
+              [region]="region"
+              [isExpanded]="region.isExpanded"
+              (toggleExpansion)="onToggleRegionExpansion($event)"
+              (toggleSelection)="onToggleRegionSelection($event)"
+              (toggleCitySelection)="onToggleCitySelection($event)"
+              (toggleBaseRegion)="onToggleBaseRegion($event)">
+            </app-region-section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Sidebar: Summary & Analytics -->
+    <div class="analytics-panel">
+      <div class="summary-card">
+        <h2 class="panel-title">Global Summary</h2>
+        <div class="summary-stats">
+          <div class="stat-item">
+            <div class="stat-label">Total Regions</div>
+            <div class="stat-value">{{ (filteredRegions$ | async)?.length || 0 }}</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Enabled Cities</div>
+            <div class="stat-value">{{ (globalStats$ | async)?.enabled?.enabledCount || 0 }}</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Base Regions</div>
+            <div class="stat-value">{{ (globalStats$ | async)?.base?.baseCount || 0 }}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <h2 class="panel-title">Recent Activity</h2>
+        <div class="activity-list">
+          <div class="activity-item">
+            <i class="fas fa-check-circle activity-icon success"></i>
+            <div class="activity-text">
+              <div class="activity-title">Region Enabled</div>
+              <div class="activity-time">2 minutes ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <i class="fas fa-star activity-icon base"></i>
+            <div class="activity-text">
+              <div class="activity-title">Base Region Set</div>
+              <div class="activity-time">5 minutes ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <i class="fas fa-search activity-icon search"></i>
+            <div class="activity-text">
+              <div class="activity-title">Search Performed</div>
+              <div class="activity-time">8 minutes ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
